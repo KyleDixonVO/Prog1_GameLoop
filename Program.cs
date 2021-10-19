@@ -31,7 +31,6 @@ namespace Prog1_GameLoop
         
         static void PlayerDraw(int x, int y)
         {   
-            
             Console.Clear();
             Console.SetCursorPosition(x, y);
             Console.Write("X");
