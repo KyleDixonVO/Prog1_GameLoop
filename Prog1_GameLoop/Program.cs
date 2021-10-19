@@ -11,8 +11,7 @@ namespace Prog1_GameLoop
         static bool gameOver;
         static int x = 20;
         static int y = 20;
-        static int previous_cursor_x;
-        static int previous_cursor_y;
+
 
         static void Main(string[] args)
         {
