@@ -21,9 +21,10 @@ namespace Prog1_GameLoop
             
             while (gameOver == false)
             {
+                PlayerDraw(x, y);
                 PlayerUpdate();
                 BoundsCheck();
-                PlayerDraw(x, y);
+                EndGame();
             }
 
         }
@@ -92,5 +93,13 @@ namespace Prog1_GameLoop
             }
         }
 
+        static void EndGame()
+        {
+            if (Console.ReadKey(true).Key == ConsoleKey.Escape)
+            {
+                gameOver = true;
+            }
+
+        }
     }
 }
